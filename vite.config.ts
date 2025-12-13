@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => ({
       },
       includeAssets: ["icon.svg"],
       manifest: {
-        name: "H2 Editor",
+        name: "H2 editor",
         short_name: "Editor",
         start_url: "/",
         scope: "/",
@@ -31,6 +31,22 @@ export default defineConfig(({ mode }) => ({
             sizes: "any",
             type: "image/svg+xml",
             purpose: "any maskable",
+          },
+          {
+            src: "icons/pwa-192.png",
+            sizes: "192x192",
+            type: "image/png",
+          },
+          {
+            src: "icons/pwa-512.png",
+            sizes: "512x512",
+            type: "image/png",
+          },
+          {
+            src: "icons/pwa-maskable.png",
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "maskable",
           },
         ],
       },
