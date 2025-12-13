@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/* Minimal base tweaks to match sample UI */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+:root {
+  font-family: "JetBrains Mono", "Noto Sans JP", "Source Han Sans", "Hiragino Sans", "Meiryo", monospace;
+}
+
+.font-mono {
+  font-family: "JetBrains Mono", "Noto Sans JP", "Source Han Sans", "Hiragino Sans", "Meiryo", monospace;
+}
+
+[data-device="pc"] button {
+  cursor: pointer;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Highlight.js scoped palettes */
+.codeblock-light .hljs {
+  color: #24292e;
+  background: transparent;
+}
+.codeblock-light .hljs-keyword,
+.codeblock-light .hljs-selector-tag,
+.codeblock-light .hljs-literal {
+  color: #d73a49;
+}
+.codeblock-light .hljs-string,
+.codeblock-light .hljs-meta .hljs-string,
+.codeblock-light .hljs-template-tag,
+.codeblock-light .hljs-template-variable,
+.codeblock-light .hljs-addition {
+  color: #032f62;
+}
+.codeblock-light .hljs-comment,
+.codeblock-light .hljs-quote {
+  color: #6a737d;
+}
+.codeblock-light .hljs-number,
+.codeblock-light .hljs-variable,
+.codeblock-light .hljs-template-variable {
+  color: #005cc5;
+}
+.codeblock-light .hljs-type,
+.codeblock-light .hljs-params,
+.codeblock-light .hljs-title {
+  color: #6f42c1;
+}
+.codeblock-light .hljs-attribute {
+  color: #005cc5;
+}
+.codeblock-light .hljs-section {
+  color: #22863a;
+}
+.codeblock-light .hljs-symbol,
+.codeblock-light .hljs-bullet {
+  color: #735c0f;
+}
+.codeblock-light .hljs-built_in,
+.codeblock-light .hljs-builtin-name {
+  color: #e36209;
+}
+.codeblock-light .hljs-emphasis {
+  font-style: italic;
+}
+.codeblock-light .hljs-strong {
+  font-weight: 700;
+}
+
+.code-editor textarea,
+.code-editor textarea:focus,
+.code-editor textarea:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+
+.codeblock-dark .hljs {
+  color: #c9d1d9;
+  background: transparent;
+}
+.codeblock-dark .hljs-keyword,
+.codeblock-dark .hljs-selector-tag,
+.codeblock-dark .hljs-literal {
+  color: #ff7b72;
+}
+.codeblock-dark .hljs-string,
+.codeblock-dark .hljs-meta .hljs-string,
+.codeblock-dark .hljs-template-tag,
+.codeblock-dark .hljs-template-variable,
+.codeblock-dark .hljs-addition {
+  color: #a5d6ff;
+}
+.codeblock-dark .hljs-comment,
+.codeblock-dark .hljs-quote {
+  color: #8b949e;
+}
+.codeblock-dark .hljs-number,
+.codeblock-dark .hljs-variable,
+.codeblock-dark .hljs-template-variable {
+  color: #79c0ff;
+}
+.codeblock-dark .hljs-type,
+.codeblock-dark .hljs-params,
+.codeblock-dark .hljs-title {
+  color: #d2a8ff;
+}
+.codeblock-dark .hljs-attribute {
+  color: #79c0ff;
+}
+.codeblock-dark .hljs-section {
+  color: #7ee787;
+}
+.codeblock-dark .hljs-symbol,
+.codeblock-dark .hljs-bullet {
+  color: #e3b341;
+}
+.codeblock-dark .hljs-built_in,
+.codeblock-dark .hljs-builtin-name {
+  color: #ffa657;
+}
+.codeblock-dark .hljs-emphasis {
+  font-style: italic;
+}
+.codeblock-dark .hljs-strong {
+  font-weight: 700;
+}
+
+/* Monaco inline tag highlight */
+.monaco-editor .monaco-tag {
+  color: #5d6fe0;
+  font-weight: 600;
+}

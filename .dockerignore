@@ -1,0 +1,30 @@
+# 依存物・生成物
+node_modules
+dist
+dist-ssr
+.pnpm-store
+.turbo
+
+# 秘匿情報
+.env
+.env.*
+!.env.example
+*key.json
+
+# VCS
+.git
+.gitignore
+
+# ログ
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# エディタ/OS
+.vscode
+.idea
+*.sw?
+.DS_Store

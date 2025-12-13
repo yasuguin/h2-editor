@@ -1,0 +1,48 @@
+{
+  "name": "h2-editor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"pnpm run dev:web\" \"pnpm run dev:api\"",
+    "dev:web": "vite",
+    "dev:api": "tsx watch app/api/src/index.ts",
+    "build": "tsc && vite build",
+    "start": "NODE_ENV=production tsx app/api/src/index.ts",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.6",
+    "highlight.js": "^11.11.1",
+    "hono": "^4.10.6",
+    "lucide-react": "^0.561.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-simple-code-editor": "^0.14.1",
+    "tsx": "^4.19.2",
+    "workbox-window": "^7.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "autoprefixer": "^10.4.22",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.3",
+    "vite": "^7.2.2",
+    "vite-plugin-pwa": "^1.2.0"
+  },
+  "packageManager": "pnpm@10.25.0"
+}
