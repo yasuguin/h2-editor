@@ -14,7 +14,7 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "@hono/node-server": "^1.19.6",
+    "@hono/node-server": "^2.1.6",
     "highlight.js": "^11.11.1",
     "hono": "^4.10.6",
     "lucide-react": "^0.561.0",
